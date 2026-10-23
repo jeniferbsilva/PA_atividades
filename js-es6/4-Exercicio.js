@@ -23,3 +23,10 @@ alunosAprovados.forEach(alunos => console.log(`${alunos.nome}`))
 console.log('\n Mostre o nome e a nota do aluno Bruno: ')
 const alunoBruno = listaDeAlunos.find(aluno => aluno.nome === 'Bruno')
 console.log(`${alunoBruno.nome} tem nota ${alunoBruno.nota}`)
+
+console.log('\n Some todas as notas: ')
+console.log(listaDeAlunos.reduce((total,aluno) => total + aluno.nota,0))
+
+console.log('\n Liste todos os nomes dos alunos, sem mostrar suas notas:')
+const nomes = listaDeAlunos.map(u => u.nome)
+nomes.forEach(u => console.log(`${u}`))
