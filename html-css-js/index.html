@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Tabuada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="pagina">
+        <section class="cartao" aria-labelledby="titulo">
+            <header class="cabecalho">
+                <p class="sobretitulo">Ritmo, movimento e aprendizado</p>
+                <h1 id="titulo">Gerador de tabuada</h1>
+                <p class="introducao">Entre na roda: escolha um número e descubra sua tabuada.</p>
+            </header>
+
+            <div class="instrumentos" aria-label="Instrumentos da roda de capoeira">
+                <div class="instrumento">
+                    <div class="desenho berimbau" aria-hidden="true">
+                        <span class="arco"></span>
+                        <span class="corda"></span>
+                        <span class="cabaça"></span>
+                    </div>
+                    <span>Berimbau</span>
+                </div>
+                <div class="instrumento">
+                    <div class="desenho pandeiro" aria-hidden="true">
+                        <span class="pele"></span>
+                        <span class="platinelas"></span>
+                    </div>
+                    <span>Pandeiro</span>
+                </div>
+                <div class="instrumento">
+                    <div class="desenho atabaque" aria-hidden="true">
+                        <span class="pele"></span>
+                        <span class="corpo"></span>
+                    </div>
+                    <span>Atabaque</span>
+                </div>
+            </div>
+
+            <div class="calculadora">
+                <label for="numero-input">Qual número vamos jogar?</label>
+                <div class="controles">
+                    <input type="number" id="numero-input" placeholder="Ex.: 5">
+                    <button id="btn-gerar">Gerar tabuada</button>
+                </div>
+
+                <div id="resultado-aqui" aria-live="polite">
+                    <p>A tabuada vai entrar na roda aqui.</p>
+                </div>
+            </div>
+        </section>
+        <p class="rodape">Axé e bons estudos!</p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
